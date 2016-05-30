@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <!-- 通知中心 -->
+        <RelativeLayout
+            android:id="@+id/find_rl_noticeCenter"
+            style="@style/about_me_rl">
+
+            <ImageView
+                android:id="@+id/faxian_iv1"
+                android:src="@mipmap/icon_find_item1"
+                style="@style/about_me_iv" />
+
+            <TextView
+                style="@style/about_me_tv"
+                android:layout_toRightOf="@+id/faxian_iv1"
+                android:text="@string/find_item_noticeCenter" />
+
+            <!--<ImageView style="@style/list_iv_arrow" />-->
+        </RelativeLayout>
+
+        <!--<View style="@style/divider_horizontal" />-->
+
+        <!-- 平台资讯 -->
+        <RelativeLayout
+            android:id="@+id/find_rl_news"
+            style="@style/about_me_rl">
+
+            <ImageView
+                android:id="@+id/faxian_iv2"
+                android:src="@mipmap/icon_find_item2"
+                style="@style/about_me_iv" />
+
+            <TextView
+                style="@style/about_me_tv"
+                android:layout_toRightOf="@+id/faxian_iv2"
+                android:text="@string/find_item_news" />
+
+            <!--<ImageView style="@style/list_iv_arrow" />-->
+        </RelativeLayout>
+
+        <!--<View style="@style/divider_horizontal" />-->
+        <!-- 投资排行 -->
+        <RelativeLayout
+            android:id="@+id/find_rl_hot"
+            style="@style/about_me_rl">
+
+            <ImageView
+                android:id="@+id/faxian_iv3"
+                android:src="@mipmap/icon_find_item3"
+                style="@style/about_me_iv" />
+
+            <TextView
+                style="@style/about_me_tv"
+                android:layout_toRightOf="@+id/faxian_iv3"
+                android:text="@string/find_item_hot" />
+
+            <!--<ImageView style="@style/list_iv_arrow" />-->
+        </RelativeLayout>
+
+        <!--<View style="@style/divider_horizontal" />-->
+        <!-- 良薪积分 -->
+        <RelativeLayout
+            android:id="@+id/find_rl_score"
+            style="@style/about_me_rl">
+
+            <ImageView
+                android:id="@+id/faxian_iv4"
+                android:src="@mipmap/icon_find_item4"
+                style="@style/about_me_iv" />
+
+            <TextView
+                style="@style/about_me_tv"
+                android:layout_toRightOf="@+id/faxian_iv4"
+                android:text="@string/find_item_score" />
+
+            <!--<ImageView style="@style/list_iv_arrow" />-->
+        </RelativeLayout>
+
+        <!--<View style="@style/divider_horizontal" />-->
+    </LinearLayout>
+
+</LinearLayout>

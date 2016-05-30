@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/detail_tab_title_color" android:gravity="center" android:id="@+id/product_detail_tab_title" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="计划介绍" android:layout_centerInParent="true" />
+    <View android:background="@drawable/tab_bg_border_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <View android:background="@drawable/tab_bg_border_vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+    <View android:background="@drawable/tab_bg_border_vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</RelativeLayout>

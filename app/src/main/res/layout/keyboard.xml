@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="#ffc9c9c9"  
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:baselineAligned="false"
+>
+  
+    <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:paddingTop="1.0px"
+    >
+    
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="良薪宝安全输入" 
+        android:textSize="16sp"
+        android:drawablePadding="2dp"
+        android:drawableLeft="@mipmap/icon_safeguard"
+    />
+     
+   </LinearLayout>
+    
+     
+  <LinearLayout android:orientation="horizontal"  android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingTop="1.0px" >
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0px" android:layout_weight="3.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="1.0px" android:layout_weight="1.0">
+            <Button android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/keyboard_1" android:background="@drawable/keyboard_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0px" android:text="1" android:layout_weight="1.0" />
+            <Button android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/keyboard_2" android:background="@drawable/keyboard_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0px" android:text="2" android:layout_weight="1.0" />
+            <Button android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/keyboard_3" android:background="@drawable/keyboard_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="3" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="1.0px" android:layout_weight="1.0">
+            <Button android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/keyboard_4" android:background="@drawable/keyboard_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0px" android:text="4" android:layout_weight="1.0" />
+            <Button android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/keyboard_5" android:background="@drawable/keyboard_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0px" android:text="5" android:layout_weight="1.0" />
+            <Button android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/keyboard_6" android:background="@drawable/keyboard_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="6" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="1.0px" android:layout_weight="1.0">
+            <Button android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/keyboard_7" android:background="@drawable/keyboard_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0px" android:text="7" android:layout_weight="1.0" />
+            <Button android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/keyboard_8" android:background="@drawable/keyboard_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0px" android:text="8" android:layout_weight="1.0" />
+            <Button android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/keyboard_9" android:background="@drawable/keyboard_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="9" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <Button android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/keyboard_other" android:background="@drawable/keyboard_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0px" android:text="." android:layout_weight="1.0" />
+            <Button android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/keyboard_0" android:background="@drawable/keyboard_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0px" android:text="0" android:layout_weight="1.0" />
+            <Button  android:background="#e1e2e6" android:layout_width="0.0dip" android:layout_height="fill_parent"  android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageButton android:id="@+id/keyboard_del" android:background="@drawable/keyboard_number" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="0.0dip" android:src="@drawable/keyboard_del" android:scaleType="center" android:layout_weight="1.0" />
+        <Button android:textSize="26.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/keyboard_ok" android:background="@drawable/keyboard_ok" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="0.0dip" android:text="完成" android:layout_weight="1.0" />
+    </LinearLayout>
+  </LinearLayout>
+  
+</LinearLayout>

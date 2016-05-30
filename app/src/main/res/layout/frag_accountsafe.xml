@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <!-- 未实名认证-->
+        <RelativeLayout
+            android:id="@+id/accountsafe_rl_realauth_no"
+            style="@style/about_me_rl"
+            >
+
+            <ImageView
+                android:id="@+id/modify_info_iv5"
+                style="@style/about_me_iv"
+                android:src="@mipmap/icon_realauth_ok" />
+
+            <TextView
+                style="@style/about_me_tv"
+                android:layout_toRightOf="@+id/modify_info_iv5"
+                android:text="@string/realauth_no2" />
+
+        </RelativeLayout>
+
+        <!-- 已实名认证-->
+        <RelativeLayout
+            android:id="@+id/accountsafe_rl_realauth_ok"
+            style="@style/about_me_rl"
+            >
+
+            <ImageView
+                android:id="@+id/modify_info_iv4"
+                style="@style/about_me_iv"
+                android:src="@mipmap/icon_realauth_ok" />
+
+            <TextView
+                style="@style/about_me_tv"
+                android:layout_toRightOf="@+id/modify_info_iv4"
+                android:text="@string/realauth_ok2" />
+
+        </RelativeLayout>
+
+
+        <!-- 修改登录密码-->
+        <RelativeLayout
+            android:id="@+id/accountsafe_rl_changePwd"
+            style="@style/about_me_rl">
+
+            <ImageView
+                android:id="@+id/modify_info_iv1"
+                style="@style/about_me_iv"
+                android:src="@mipmap/icon_pwd1" />
+
+            <TextView
+                style="@style/about_me_tv"
+                android:layout_toRightOf="@+id/modify_info_iv1"
+                android:text="@string/changeLoginPwd" />
+
+        </RelativeLayout>
+
+
+        <!-- 设置手势密码-->
+        <RelativeLayout
+            android:id="@+id/accountsafe_rl_setGesturePwd"
+            style="@style/about_me_rl">
+
+            <ImageView
+                android:id="@+id/modify_info_iv2"
+                style="@style/about_me_iv"
+                android:src="@mipmap/icon_gesture" />
+
+            <TextView
+                style="@style/about_me_tv"
+                android:layout_toRightOf="@+id/modify_info_iv2"
+                android:text="@string/setGesturePwd" />
+
+        </RelativeLayout>
+
+        <!-- 修改手势密码-->
+        <RelativeLayout
+            android:id="@+id/accountsafe_rl_changeGesturePwd"
+            style="@style/about_me_rl">
+
+            <ImageView
+                android:id="@+id/modify_info_iv3"
+                style="@style/about_me_iv"
+                android:src="@mipmap/icon_gesture" />
+
+            <TextView
+                style="@style/about_me_tv"
+                android:layout_toRightOf="@+id/modify_info_iv3"
+                android:text="@string/changeGesturePwd" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

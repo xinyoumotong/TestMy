@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+  >
+  
+    <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+    >
+      <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/product_shape_border"
+       android:padding="1dp"
+    >
+    
+         <!-- 标题 -->
+         <LinearLayout 
+           android:id="@+id/product_ll_title"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+          
+         >
+        
+	         <ImageView 
+	             android:id="@+id/product_iv_HeartState"
+	             style="@style/product_img_type"
+	             android:src="@mipmap/icon_invest_type_1"
+	          />
+	         
+	         <ImageView 
+	            android:id="@+id/product_iv_ConscienceState"
+	            style="@style/product_img_type"
+	            android:src="@mipmap/icon_invest_type_2"
+	          />
+	         
+	             
+	         <ImageView 
+	             android:id="@+id/product_iv_RealState"
+	             style="@style/product_img_type"
+	             android:src="@mipmap/icon_invest_type_3"
+	          />
+	         
+	         <ImageView 
+	             android:id="@+id/product_iv_CreditState"
+	             style="@style/product_img_type"
+	             android:src="@mipmap/icon_invest_type_4"
+	          />
+	         
+	          <ImageView
+	             android:id="@+id/product_iv_SecurityState" 
+	             style="@style/product_img_type"
+	             android:src="@mipmap/icon_invest_type_5"
+	          />
+         
+	         <TextView 
+		       android:id="@+id/product_name"
+		       style="@style/txt_big"
+		       android:layout_weight="1"
+		       android:layout_marginLeft="2dp"
+		       android:text="@string/app_name"
+		     />
+        </LinearLayout>
+        <LinearLayout 
+           android:id="@+id/product_ll_newbid_title"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:gravity="center_vertical"
+           android:background="@color/titlebar"
+           android:visibility="gone"
+        >
+	       <TextView 
+		       android:id="@+id/product_name_newbid"
+		       style="@style/txt_big"
+		       android:layout_marginLeft="4dp"
+		       android:textColor="@color/white"
+		       android:text="@string/app_name"
+		     />
+	       
+	        <ImageView 
+	             style="@style/product_img_type"
+	             android:src="@mipmap/icon_benxi"
+	          />
+        </LinearLayout>
+         
+         <View style="@style/divider_horizontal" />
+         <!-- 详情 -->
+         <LinearLayout style="@style/ll_horizontal_base" android:layout_height="80dp"   >
+	        <LinearLayout style="@style/product_vertical_weight">
+	             <TextView style="@style/product_item_title" android:text="@string/project_year_interest" />
+	             <TextView android:id="@+id/product_year_interest" style="@style/product_item_year_interest"  android:text="@string/zero_percent" android:textColor="@color/red" />
+	        </LinearLayout>
+	        <View style="@style/divider_vertical" />
+	        <LinearLayout style="@style/product_vertical_weight" >
+	             <TextView style="@style/product_item_title" android:text="@string/project_duration" />
+	            <TextView android:id="@+id/product_duration" style="@style/product_item_value"  android:text="@string/zero_int" />
+	        </LinearLayout>
+	         <View style="@style/divider_vertical" />
+	        <LinearLayout style="@style/product_vertical_weight" >
+	            <TextView style="@style/product_item_title"  android:text="@string/project_total" />
+	            <TextView android:id="@+id/product_total" style="@style/product_item_value"  android:text="@string/zero_int" />
+	        </LinearLayout>
+	         <View style="@style/divider_vertical" />
+	         <LinearLayout style="@style/product_vertical_weight" >
+	           <ImageView android:id="@+id/product_PaidState" style="@style/img_base" android:layout_gravity="center" />
+	        </LinearLayout>
+       </LinearLayout>
+       <View style="@style/divider_horizontal" />
+       <LinearLayout 
+	      style="@style/ll_horizontal_base"
+	      android:background="@color/white"
+	      android:padding="10dp"
+	      android:gravity="center"
+       >
+          <TextView 
+            style="@style/txt_gray"
+            android:text="@string/project_progress"
+            android:layout_marginLeft="5.0dip" 
+            android:layout_marginRight="5.0dip"
+          />
+	      <ProgressBar 
+	        android:id="@+id/product_progress"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="5dp"
+		    android:max="100"
+		    style="@style/progressbar_red"
+		  />
+	   
+	      <TextView 
+	        android:id="@+id/product_percent"
+	        style="@style/txt_red"
+            android:layout_marginLeft="5.0dip" 
+            android:layout_marginRight="5.0dip"
+            android:text="@string/zero_percent"
+            android:textStyle="bold"
+          />
+	  </LinearLayout>
+	   
+    </LinearLayout>
+
+  
+   </RelativeLayout>
+   
+ 
+</LinearLayout>

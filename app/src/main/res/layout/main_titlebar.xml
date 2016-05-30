@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlebar_height"
+    android:background="@mipmap/titlebar_bg"
+ >
+
+
+    <ImageView
+        android:id="@+id/titlebar_img_back"
+        style="@style/titlebar_img_left"
+        android:src="@mipmap/titlebar_back"
+        android:visibility="gone"
+     />
+    
+    <ImageView
+        android:id="@+id/titlebar_img_menu"
+        style="@style/titlebar_img_right"
+        android:src="@mipmap/titlebar_refresh"
+        android:visibility="gone"
+     />
+    
+     <TextView
+        android:id="@+id/titlebar_text_title"
+        style="@style/titlebar_text"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+     />
+
+</RelativeLayout>

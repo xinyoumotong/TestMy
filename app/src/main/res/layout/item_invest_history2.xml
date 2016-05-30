@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_border_all2"
+        android:orientation="vertical">
+
+        <!-- 项目名称 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/product_history_item_title"
+                android:text="@string/project_name" />
+
+            <TextView
+                android:id="@+id/item_invest_history2_BidName"
+                style="@style/product_history_item_value" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_border_lr2"
+            android:orientation="horizontal">
+            <!-- 投资金额 -->
+            <LinearLayout
+                style="@style/ll_horizontal_weight"
+                android:layout_height="fill_parent"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    style="@style/product_history_item_title"
+                    android:text="@string/project_invest_money" />
+
+                <TextView
+                    android:id="@+id/item_invest_history2_TransAmt"
+                    android:textColor="@color/rede63054"
+                    style="@style/product_history_item_value" />
+
+            </LinearLayout>
+
+            <!-- 已回本金 -->
+            <LinearLayout
+                style="@style/ll_horizontal_weight"
+                android:layout_height="fill_parent"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    style="@style/product_history_item_title2"
+                    android:text="@string/project_alreadyCollection" />
+
+                <TextView
+                    android:id="@+id/item_invest_history2_AlreadyCollection"
+                    style="@style/product_history_item_value" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_border_lr2"
+            android:orientation="horizontal">
+
+
+            <!--预估利息 -->
+            <LinearLayout
+                style="@style/ll_horizontal_weight"
+                android:layout_height="fill_parent"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    style="@style/product_history_item_title"
+                    android:text="@string/project_interest" />
+
+                <TextView
+                    android:id="@+id/item_invest_history2_InteRest"
+                    style="@style/product_history_item_value" />
+
+            </LinearLayout>
+
+            <!-- 待回本金-->
+            <LinearLayout
+                style="@style/ll_horizontal_weight"
+                android:layout_height="fill_parent"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    style="@style/product_history_item_title2"
+                    android:text="@string/project_waitingCollection" />
+
+                <TextView
+                    android:id="@+id/item_invest_history2_WaitingCollection"
+                    style="@style/product_history_item_value" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_border_lr2"
+            android:orientation="horizontal">
+
+            <!--已回利息 -->
+            <LinearLayout
+                style="@style/ll_horizontal_weight"
+                android:layout_height="fill_parent"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    style="@style/product_history_item_title"
+                    android:text="@string/project_alreadyInteRest" />
+
+                <TextView
+                    android:id="@+id/item_invest_history2_AlreadyInteRest"
+                    style="@style/product_history_item_value" />
+
+            </LinearLayout>
+
+            <!-- 投资时间 -->
+            <LinearLayout
+                style="@style/ll_horizontal_weight"
+                android:layout_height="fill_parent"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    style="@style/product_history_item_title2"
+                    android:text="@string/project_invest_time" />
+
+                <TextView
+                    android:id="@+id/item_invest_history2_CreateTime"
+                    android:textSize="14dp"
+                    style="@style/product_history_item_value" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_border_lrb2"
+            android:orientation="horizontal">
+
+            <!--待回利息 -->
+            <LinearLayout
+                style="@style/ll_horizontal_weight"
+                android:layout_height="fill_parent"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    style="@style/product_history_item_title"
+                    android:text="@string/project_waitingInteRest" />
+
+                <TextView
+                    android:id="@+id/item_invest_history2_WaitingInteRest"
+                    style="@style/product_history_item_value" />
+
+            </LinearLayout>
+
+            <!-- 预估截至时间 -->
+            <LinearLayout
+                style="@style/ll_horizontal_weight"
+                android:layout_height="fill_parent"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    style="@style/product_history_item_title2"
+                    android:text="@string/project_invest_endtime" />
+
+                <TextView
+                    android:id="@+id/item_invest_history2_EndTime"
+                    android:textSize="14dp"
+                    style="@style/product_history_item_value" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

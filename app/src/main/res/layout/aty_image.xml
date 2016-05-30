@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" 
+ >
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/image_iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@android:color/black"
+        android:contentDescription="@null"
+     />
+
+    <ProgressBar
+        android:id="@+id/image_progress"
+        style="@style/Progressbar_circle"
+        android:layout_centerInParent="true" 
+    />
+    
+    <LinearLayout
+        android:id="@+id/image_ll_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#cc000000"
+        android:gravity="center"
+        android:visibility="gone"
+     >
+       <ImageButton  android:id="@+id/image_ib_rotate_right" style="@style/image_show_btn" android:src="@drawable/selector_img_rotate_right" />
+       <ImageButton  android:id="@+id/image_ib_rotate_left" style="@style/image_show_btn" android:src="@drawable/selector_img_rotate_left" />
+       <ImageButton  android:id="@+id/image_ib_save" style="@style/image_show_btn" android:src="@drawable/selector_img_download" />
+
+    </LinearLayout>
+  
+
+</RelativeLayout>

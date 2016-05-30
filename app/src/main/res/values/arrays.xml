@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <string-array name="logout_option">
+        <item>退出</item>
+        <item>取消</item>
+    </string-array>
+    
+    <string-array name="notice_option">
+        <item>用户通知</item>
+        <item>全局通知</item>
+    </string-array>
+    
+    <string-array name="licai_option">
+        <item>良薪贷</item>
+        <item>一比多</item>
+    </string-array>
+
+    <string-array name="invest_history">
+        <item>@string/invest_history_item1</item>
+        <item>@string/invest_history_item2</item>
+        <item>@string/invest_history_item3</item>
+    </string-array>
+    
+    <string-array name="hongbaoRecord_option">
+        <item>红包储备</item>
+        <item>累计获取</item>
+    </string-array>
+    
+    
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent" 
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+ >
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" 
+    >
+
+        
+            <!-- 手机号 -->
+            <RelativeLayout 
+                android:layout_width="fill_parent" 
+                android:layout_height="50.0dip" 
+                android:layout_marginTop="10.0dip" 
+            >
+                <hotP2B.WageGainTools.android.ui.widget.EditTextWithDel 
+                    android:id="@+id/verification1_et_mobile"
+                    style="@style/rl_edit_del" 
+                    android:inputType="number" 
+                    android:hint="@string/mobile" 
+                    android:maxLength="11"
+                    android:drawableLeft="@mipmap/icon_mobile"
+                />
+                <requestFocus />
+                
+                <ImageView 
+                    android:id="@+id/verification1_iv_mobile_clear" 
+                    style="@style/rl_edit_del_image"
+                />
+           </RelativeLayout>
+            
+            <!-- 验证码 -->
+            <RelativeLayout   
+                android:layout_width="fill_parent" 
+                android:layout_height="50.0dip" 
+                android:layout_marginTop="10.0dip"  
+             >
+                <hotP2B.WageGainTools.android.ui.widget.EditTextWithDel
+                    android:id="@+id/verification1_et_verifyCode" 
+                    style="@style/rl_edit_del" 
+                    android:paddingRight="100.0dip"  
+                    android:inputType="number" 
+                    android:hint="@string/verifyCode" 
+                    android:maxLength="6"
+                    android:drawableLeft="@mipmap/icon_sms"
+                />
+                <TextView 
+                    android:id="@+id/verification1_tv_validation_code" 
+                    android:gravity="center" 
+                    android:background="@drawable/selector_send_valicode_bg" 
+                    android:paddingLeft="10.0dip" 
+                    android:paddingRight="10.0dip" 
+                    android:paddingTop="5.0dip" 
+                    android:paddingBottom="5.0dip" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginRight="8.0dip" 
+                    android:text="@string/getVerifyCode" 
+                    android:textColor="@color/white" 
+                    android:layout_alignParentRight="true" 
+                    
+                />
+            </RelativeLayout>
+            
+            <!-- 密码 -->
+            <RelativeLayout 
+                android:layout_width="fill_parent" 
+                android:layout_height="50.0dip" 
+                android:layout_marginTop="10.0dip"  
+             >
+                <hotP2B.WageGainTools.android.ui.widget.EditTextWithPassword
+                    android:id="@+id/verification1_et_password" 
+                    style="@style/rl_edit_password" 
+                    android:hint="@string/loginPassword" 
+                    android:drawableLeft="@mipmap/icon_pwd1"
+                />
+                <ImageView 
+                   android:id="@+id/verification1_iv_pwd_clear" 
+                   style="@style/rl_edit_password_image"
+                />
+            </RelativeLayout>
+            
+            
+            <!-- 确认密码 -->
+            <RelativeLayout 
+                android:layout_width="fill_parent" 
+                android:layout_height="50.0dip" 
+                android:layout_marginTop="10.0dip"  
+             >
+                <hotP2B.WageGainTools.android.ui.widget.EditTextWithPassword
+                    android:id="@+id/verification1_et_password2" 
+                    style="@style/rl_edit_password" 
+                    android:hint="@string/loginPassword2" 
+                    android:drawableLeft="@mipmap/icon_pwd3"
+                />
+                <ImageView 
+                    android:id="@+id/verification1_iv_pwd2_clear" 
+                    style="@style/rl_edit_password_image" 
+                />
+            </RelativeLayout>
+  
+           <Button
+              android:id="@+id/verification1_btn_register"
+              android:layout_width="fill_parent"
+              android:layout_height="50dp"
+              android:layout_marginTop="10.0dip"  
+              android:background="@drawable/selector_btn_submit"
+              android:textColor="@color/white"
+              android:textSize="16sp"
+              android:text="@string/register_now"
+              android:enabled="false"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

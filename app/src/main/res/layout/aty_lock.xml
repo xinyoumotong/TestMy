@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ff232736"
+    android:fitsSystemWindows="true"
+  >
+      <include
+	     android:id="@+id/titlebar"
+	     layout="@layout/main_titlebar"
+	  />
+      
+      <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titlebar"
+        
+        android:orientation="vertical" 
+        android:gravity="center"
+     >
+	       <GridView android:id="@+id/lock_gv" 
+	          android:scrollbars="none" 
+	          android:layout_width="50.0dip" 
+	          android:layout_height="50.0dip" 
+	          android:listSelector="@android:color/transparent" 
+	          android:horizontalSpacing="5.0dip" 
+	          android:verticalSpacing="5.0dip" 
+	          android:numColumns="3" 
+	      />
+	      <TextView 
+	          android:id="@+id/lock_tv_tip" 
+	          style="@style/txt_base"
+	          android:layout_marginTop="10.0dip" 
+	          android:textColor="#ffff2525" 
+	          android:visibility="invisible" 
+	      />
+	      
+	      
+	      <hotP2B.WageGainTools.android.ui.widget.GestureLockView 
+	           android:id="@+id/lock_gestureLockView" 
+	           android:layout_width="wrap_content" 
+	           android:layout_height="wrap_content" 
+	           android:layout_marginTop="20.0dip" 
+	      />
+	      
+       </LinearLayout>
+    
+       <LinearLayout
+            android:id="@+id/gesture_ll_forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dip"
+            android:orientation="horizontal"
+            android:gravity="center" 
+        >
+
+          <TextView
+              android:id="@+id/lock_tv_forget"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/forget_gesturePassword"
+              android:textColor="#409DE5"
+              android:visibility="gone"
+           />
+            
+        </LinearLayout>
+     
+</RelativeLayout>

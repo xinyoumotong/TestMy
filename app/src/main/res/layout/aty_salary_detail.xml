@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/main_titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:background="@mipmap/banner"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/salary_detail_tv_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/zero_float"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/salary_detail_tv_yuan"
+            style="@style/txt_white"
+            android:text="@string/yuan"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_border_b"
+        >
+
+        <TextView
+            android:id="@+id/item_salary_detail_tv_month"
+            style="@style/txt_base"
+            android:textSize="22sp"
+            android:layout_marginLeft="18dp"
+            android:text="@string/zero_int"
+            android:textColor="#4d4d4d"
+
+            />
+
+        <TextView
+            android:id="@+id/item_salary_detail_month"
+            style="@style/txt_base"
+            android:textSize="16sp"
+            android:text="@string/month"
+            android:textColor="#4d4d4d" />
+        <TextView
+            android:id="@+id/item_salary_detail_tv_year"
+            style="@style/txt_base"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/zero_int"
+            android:textColor="#999999" />
+        <TextView
+            android:id="@+id/item_salary_detail_year"
+            style="@style/txt_base"
+            android:textSize="14sp"
+            android:text="@string/year"
+            android:textColor="#999999" />
+        <TextView
+            style="@style/txt_base"
+            android:textSize="14sp"
+            android:text="@string/salary_detail"
+            android:textColor="#999999" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:id="@+id/salary_detail_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:scrollbars="none"
+                android:fadingEdge="none" />
+
+            <hotP2B.WageGainTools.android.ui.widget.EmptyLayout
+                android:id="@+id/salary_detail_empty_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

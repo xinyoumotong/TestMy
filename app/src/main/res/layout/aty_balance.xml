@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true"
+ >
+ 
+     <include
+	     android:id="@+id/titlebar"
+	     layout="@layout/main_titlebar"
+	  />
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+     >
+     
+        <!-- 开始日期 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        >
+           <TextView 
+             style="@style/txt_base"
+             android:layout_weight="1"
+             android:text="@string/startDate"
+            />  
+    
+          <Button  android:id="@+id/balance_btn_oneWeek" android:background="@drawable/selector_btn_radius_blue"  android:layout_width="wrap_content" android:layout_height="30.0dip" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:text="@string/month_week" android:textSize="12sp" android:textColor="@color/white" android:gravity="center"/> 
+	      <Button  android:id="@+id/balance_btn_oneMonth" android:background="@drawable/selector_btn_radius_blue"  android:layout_width="wrap_content" android:layout_height="30.0dip" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_marginLeft="5dp" android:text="@string/month_one" android:textSize="12sp" android:textColor="@color/white" android:gravity="center"/> 
+	      <Button  android:id="@+id/balance_btn_threeMonth" android:background="@drawable/selector_btn_radius_blue"  android:layout_width="wrap_content" android:layout_height="30.0dip" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_marginLeft="5dp" android:text="@string/month_three" android:textSize="12sp" android:textColor="@color/white" android:gravity="center" />
+            
+        </LinearLayout>
+   
+      <EditText 
+         android:id="@+id/balance_et_startDT"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         android:inputType="number"
+         android:maxLength="8"
+       />
+    
+      
+       <!-- 结束日期 -->
+       <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:text="@string/endDate"
+        />
+         
+       <EditText 
+           android:id="@+id/balance_et_endDT"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:inputType="number"
+           android:maxLength="8"
+        />
+       
+     <Button 
+         android:id="@+id/balance_btn_query"
+         android:layout_width="fill_parent"
+         android:layout_height="50dp"
+         android:background="@drawable/selector_btn_blue"
+         android:layout_marginTop="20dp"
+         android:textColor="@color/white"
+         android:text="@string/query"
+       />
+   
+    </LinearLayout>   
+
+</LinearLayout>

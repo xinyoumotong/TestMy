@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+ >
+     <include
+	    android:id="@+id/titlebar"
+	    layout="@layout/main_titlebar"
+	 /> 
+	 
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titlebar" 
+        android:orientation="vertical"
+     >
+         
+
+	     <TextView
+	         android:id="@+id/income_tv_money"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_gravity="center_horizontal"
+	         android:textSize="40sp"
+	         android:textColor="@color/white"
+	         android:text="@string/zero_float"
+	      />
+	   
+	     <RelativeLayout 
+	       android:layout_width="fill_parent"
+	       android:layout_height="50dp"
+	       android:padding="10dp"
+	      >
+	    
+	        <ImageView
+	            android:id="@+id/income_iv_prev"
+	            style="@style/titlebar_img_left"
+	            android:src="@drawable/selector_img_gains_prev"
+	         />
+	       
+	         <TextView 
+	             android:id="@+id/income_tv_date"
+	             style="@style/txt_large"
+	             android:textColor="@color/white"
+	             android:layout_centerInParent="true"
+	         />
+	         <ImageView 
+	             android:id="@+id/income_iv_next"
+	             style="@style/titlebar_img_right"
+	             android:src="@drawable/selector_img_gains_next"
+	          />
+	       
+	     </RelativeLayout>
+     </LinearLayout>
+     
+   
+	 
+   <hotP2B.WageGainTools.android.ui.widget.zrclistview.ZrcListView
+       android:id="@+id/income_zlistview"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+     />
+	 
+</LinearLayout>

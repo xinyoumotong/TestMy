@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/gray_f8"
+        android:orientation="horizontal">
+
+        <hotP2B.WageGainTools.android.ui.widget.CircleImageView
+            android:id="@+id/my_iv_avatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:clickable="true"
+            android:contentDescription="face"
+            android:padding="1.0dip"
+            android:src="@mipmap/icon_avatar_default"
+            app:border_color="@color/rede63054"
+            app:border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/about_me_rl"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/my_tv_realname"
+                    style="@style/about_me_tv2"
+                    android:textColor="@color/gray_4d"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/about_me_rl"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/my_tv_companyName"
+                    style="@style/about_me_tv2"
+                    android:textColor="@color/gray_99" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/about_me_rl"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/my_btnrl_delegateAccount2"
+                    style="@style/about_me_bt_rl"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_border_all_blue">
+
+                    <ImageView
+                        android:id="@+id/my_btn_delegateAccount2"
+                        style="@style/about_me_bt_iv"
+                        android:src="@drawable/selector_img_nodelegate" />
+
+                    <TextView
+                        android:id="@+id/my_tv_delegateAccount2"
+                        style="@style/about_me_bt_tv"
+                        android:layout_toRightOf="@+id/my_btn_delegateAccount2"
+                        android:text="@string/realauth_no" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/my_btnrl_delegateAccount"
+                    style="@style/about_me_bt_rl"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_border_all_blue">
+
+                    <ImageView
+                        android:id="@+id/my_btn_delegateAccount"
+                        style="@style/about_me_bt_iv"
+                        android:src="@drawable/selector_img_nodelegate" />
+
+                    <TextView
+                        android:id="@+id/my_tv_delegateAccount"
+                        style="@style/about_me_bt_tv"
+                        android:layout_toRightOf="@+id/my_btn_delegateAccount"
+                        android:text="@string/auto_no" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- 账户安全 -->
+    <RelativeLayout
+        android:id="@+id/my_ll_accountSafe"
+        style="@style/about_me_rl">
+
+        <ImageView
+            android:id="@+id/about_me_iv"
+            style="@style/about_me_iv"
+            android:src="@mipmap/icon_my_safe" />
+
+        <TextView
+            style="@style/about_me_tv"
+            android:layout_toRightOf="@+id/about_me_iv"
+            android:text="@string/my_item_accountSafe2" />
+
+    </RelativeLayout>
+
+    <!--<View style="@style/divider_horizontal" />-->
+
+    <!-- 帮助中心 -->
+    <RelativeLayout
+        android:id="@+id/my_ll_help"
+        style="@style/about_me_rl">
+
+        <ImageView
+            android:id="@+id/about_me_iv2"
+            style="@style/about_me_iv"
+            android:src="@mipmap/icon_my_help" />
+
+        <TextView
+            style="@style/about_me_tv"
+            android:layout_toRightOf="@+id/about_me_iv2"
+            android:text="@string/my_item_help" />
+
+    </RelativeLayout>
+
+    <!--<View style="@style/divider_horizontal" />-->
+
+    <!-- 关于我们 -->
+    <RelativeLayout
+        android:id="@+id/my_ll_about"
+        style="@style/about_me_rl">
+
+        <ImageView
+            android:id="@+id/about_me_iv3"
+            style="@style/about_me_iv"
+            android:src="@mipmap/icon_my_about" />
+
+        <TextView
+            style="@style/about_me_tv"
+            android:layout_toRightOf="@+id/about_me_iv3"
+            android:text="@string/my_item_about" />
+
+    </RelativeLayout>
+
+
+    <!--<View style="@style/divider_horizontal" />-->
+
+
+    <Button
+        android:id="@+id/my_btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_btn_red"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

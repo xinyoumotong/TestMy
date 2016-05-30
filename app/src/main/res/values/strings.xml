@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">良薪宝</string>
+    <string name="copyright">上海火速网络科技有限公司  © 1998-2016</string>
+
+    <string name="feedback">意见反馈</string>
+    <string name="double_click_exit">再按一次退出程序</string>
+    <string name="tip_logout">你确定要退出当前账号吗?</string>
+    <string name="seeAll">查看全文</string>
+    <string name="submit">提交</string>
+    <string name="next">下一步</string>
+    <string name="unknown">--</string>
+    <string name="unknown2">确认撤标</string>
+    <string name="query">查询</string>
+    <string name="project">项目</string>
+    <string name="income">收益</string>
+    <string name="personal">个人信息</string>
+    <string name="forget_gesturePassword">忘记手势密码?</string>
+    <string name="prompt">提示信息</string>
+    <string name="yuan">元</string>
+    <string name="agree">同意</string>
+    <string name="time">时间</string>
+    <string name="turn_on">开启</string>
+    <string name="turn_off">关闭</string>
+
+    <string name="income_7">七日年化收益率(%)</string>
+    <string name="income_10000">万份收益(元)</string>
+    <string name="salary_detail">工资明细</string>
+    <string name="salary_raw">应发合计</string>
+    <string name="salary_add">奖励合计</string>
+    <string name="salary_subtract">扣款合计</string>
+    <string name="salary_all">合计到账金额(元)</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="verify_phone">验证手机</string>
+    <string name="finish">完成</string>
+
+    <string name="percent_10">10%</string>
+    <string name="percent_20">20%</string>
+    <string name="percent_30">30%</string>
+    <string name="percent_80">80%</string>
+    <string name="percent_90">90%</string>
+    <string name="percent_100">100%</string>
+    <string name="forward_slash">/</string>
+    <string name="setting">设置</string>
+    <string name="rollout">转出</string>
+    <string name="remain">剩余</string>
+
+    <!-- 良薪宝 -->
+    <string name="welcome1">钱包</string>
+    <string name="welcome2">理财</string>
+    <string name="welcome3">发现</string>
+    <string name="welcome4">我的</string>
+
+
+    <!-- 注册登录相关 -->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="mobile">手机号码</string>
+    <string name="verifyCode">验证号码</string>
+    <string name="loginPassword">登录密码(6到16位)</string>
+    <string name="loginPassword2">确认密码(6到16位)</string>
+    <string name="idNumber">身份证号</string>
+    <string name="realname">真实姓名</string>
+    <string name="realauth">实名认证</string>
+    <string name="realauth_ok">已实名认证</string>
+    <string name="realauth_ok2">个人信息</string>
+    <string name="auto_no">未托管账户</string>
+    <string name="auto_ok">已托管账户</string>
+    <string name="realauth_no">未实名认证</string>
+    <string name="realauth_no2">修改个人信息</string>
+
+    <string name="tip_inputMobileNumber">请输入11位手机号码</string>
+    <string name="tip_inputVerifyCode">请输入验证号码</string>
+    <string name="tip_inputPassword">请输入6到16位密码</string>
+    <string name="tip_inputPassword2">请再次输入密码</string>
+    <string name="tip_realauth">提示:只有通过实名认证的用户才能接收企业薪资</string>
+    <string name="tip_inputRealName">请输入真实姓名</string>
+    <string name="tip_inputIdNumber">请输入18位身份证号</string>
+    <string name="tip_inputBankCard">请输入银行卡号</string>
+    <string name="tip_hongbao_setting_apply_percent">转入红包储备金额所占工资比例</string>
+    <string name="tip_apply_bankwater">温馨提示:\r\n1.申请银行流水,系统将会收取约5%的手续费.\r\n2.手续费将从申请银行流水金额中扣除.</string>
+    <string name="tip_input_hongbao_rollout_money">请输入转出金额</string>
+    <string name="tip_hongbao_rollout">温馨提示:\r\n1.红包储备只能转出到余额.</string>
+
+    <string name="getVerifyCode">获取验证码</string>
+    <string name="register_now">立即注册</string>
+    <string name="skip">跳过</string>
+    <string name="renzhen">立即认证</string>
+
+    <string name="autoLogin">自动登录</string>
+    <string name="forget_Password">忘记密码?</string>
+    <string name="loading">加载中</string>
+
+
+    <string name="asset">资产</string>
+    <string name="balance">余额</string>
+    <string name="balance2">余额(元)</string>
+    <string name="money">金额</string>
+    <string name="money2">金额(元)</string>
+    <string name="accountBalance">账户余额</string>
+    <string name="logout">退出登陆</string>
+
+
+    <string name="confirm">确定</string>
+    <string name="confirm2">确认修改</string>
+    <string name="cancel">取消</string>
+    <string name="manual">新手指南</string>
+
+    <!-- 钱包 -->
+    <string name="assets_all">总资产</string>
+    <string name="zero_int">0</string>
+    <string name="zero_float">0.00</string>
+    <string name="zero_decimals">.00</string>
+    <string name="zero_percent">0%</string>
+    <string name="safeguard">账户安全保障中</string>
+    <string name="lastday_income">昨日收益(元)</string>
+    <string name="month_income">当月收益(元)</string>
+    <string name="all_income">累计收益(元)</string>
+    <string name="bankcard">银行卡</string>
+    <string name="message">通知</string>
+    <string name="hongbao">礼拜红包</string>
+    <string name="recharge">充值</string>
+    <string name="withdraw">提现</string>
+    <string name="salary">工资条</string>
+    <string name="safe">安全</string>
+    <string name="huifusafe">良薪宝引入第三方机构“汇付天下”全程监管资金流动，时时资金变化通知与短信提醒，保障用户的安全利益。</string>
+
+
+    <!-- 发现 -->
+    <string name="find_item_noticeCenter">通知中心</string>
+    <string name="find_item_news">平台资讯</string>
+    <string name="find_item_hot">投资排行</string>
+    <string name="find_item_score">良薪积分</string>
+
+    <!-- 我的 -->
+    <string name="my_item_accountSafe">账户安全</string>
+    <string name="my_item_accountSafe2">修改信息</string>
+    <string name="my_item_help">帮助中心</string>
+    <string name="my_item_about">关于我们</string>
+    <string name="my_item_invite">邀请好友</string>
+    <string name="my_item_realauth">实名认证</string>
+    <string name="my_item_modifyPassword">修改密码</string>
+    <string name="my_item_appintroducetitle">上海火速网络科技有限公司</string>
+    <string name="my_item_appintroduce">上海火速网络科技有限公司是一家专注于网络营销服务的民营企业，历经18年的发展，已经发展成为中国网络营销领域的领跑者。我们的服务：以B2M网络托管服务为核心，建立基础网络服务、网建业务、推广和转化服务、信息化及增值服务四大体系.\n\n良薪宝是上海火速网络科技有限公司的旗下产品，秉承构建致良知企业联盟幸福大家庭的宗旨。面向全员，集众力闲散资金，给与参与投标者实实在在的回报，标的全程第三方风控监管安全可靠。</string>
+
+
+    <!-- 忘记密码 -->
+    <string name="new_pwd">新密码</string>
+    <string name="tip_reset2_pwd">请使用新密码登录,登录后可以修改密码</string>
+    <string name="copy">复制</string>
+    <string name="gologin">去登录</string>
+
+    <!-- 修改密码 -->
+    <string name="text_old_pwd">请输入旧密码</string>
+    <string name="text_new_pwd">请输入新密码</string>
+    <string name="text_new_pwd2">请确认确认密码</string>
+
+    <!-- 个人信息 -->
+    <string name="avatar">头像</string>
+    <string name="changeLoginPwd">修改登录密码</string>
+    <string name="setGesturePwd">设置手势密码</string>
+    <string name="changeGesturePwd">修改手势密码</string>
+
+    <!-- 理财产品 -->
+    <string name="project_year_interest">预期年化</string>
+    <string name="project_duration">项目期限</string>
+    <string name="project_total">项目总额</string>
+    <string name="project_progress">项目进度</string>
+    <string name="project_remaintime">剩余时间</string>
+    <string name="project_chargingway">收益方式</string>
+    <string name="project_invest_minmoney">起投金额</string>
+    <string name="project_invest_maxmoney">限投金额</string>
+    <string name="project_remainmoney">剩余可投</string>
+    <string name="project_name">项目名称：</string>
+    <string name="project_orderid">订单编号</string>
+    <string name="project_interest">预估利息：</string>
+    <string name="project_alreadyCollection">已回本金：</string>
+    <string name="project_alreadyInteRest">已回利息：</string>
+    <string name="project_waitingCollection">待收本金：</string>
+    <string name="project_waitingInteRest">待收利息：</string>
+    <!--<string name="project_invest_endtime">预估截止时间：</string>-->
+    <string name="project_invest_endtime">截止时间：</string>
+    <string name="project_withdraw">去撤标</string>
+    <string name="project_alreadywithdraw">已撤标</string>
+    <string name="money_percent">%</string>
+    <string name="money_wan">万</string>
+    <string name="invest_money">投资金额(元)</string>
+    <string name="tip_input_invest_money">请输入起投金额的整数倍</string>
+    <string name="project_invest">参与投资</string>
+    <string name="project_invest_confirm">确认投资</string>
+    <string name="project_invest_time">投资时间：</string>
+    <string name="project_invest_money">投资金额：</string>
+    <string name="project_invest_state">流标状态：</string>
+    <string name="agreement">《良薪宝用户理财服务协议》</string>
+
+    <string name="invest_history_item1">投标中</string>
+    <string name="invest_history_item2">回款中</string>
+    <string name="invest_history_item3">撤标</string>
+
+
+    <!-- 关于 -->
+    <string name="appUpdate">检查更新</string>
+    <string name="appIntroduce">良薪宝介绍</string>
+
+    <!-- 提现 -->
+    <string name="tip_input_withdraw_money">请输入提现金额</string>
+    <string name="tip_input_withdraw_money2">最低转出金额100元</string>
+    <string name="tip_input_recharge_money">请输入充值金额</string>
+    <string name="tip_notopen">此功能尚未开放,敬请期待^_^</string>
+    <string name="tip_withdraw">提示：\n正常情况下，提现金额将于下一个工作日到账。</string>
+    <!--<string name="tip_recharge"><font color='red'>重要提示:</font>\r\n1.目前手机端支持快捷充值和网银充值.\r\n2.只能绑定一张银行卡作为快捷卡,且只可以提现到该快捷卡.\r\n3.如需解绑快捷卡,请至汇付天下官网-P2P账户查询系统进行解绑.</string>-->
+    <string name="tip_recharge">1：目前手机端支持快捷充值和网银充值。\n2：只能绑定一张银行卡作为快捷卡，且默认提现到该快捷卡。绑定快捷卡会自动解绑其它银行卡，该快捷卡不能删除。\n3：如需解绑快捷卡，请至汇付天下官网-P2P账户查询系统进行解绑。</string>
+    <string name="tip_text">提示：</string>
+
+    <!-- 余额 -->
+    <string name="startDate">开始日期:</string>
+    <string name="endDate">结束日期:</string>
+    <string name="month_week">最近7天</string>
+    <string name="month_one">最近一个月</string>
+    <string name="month_three">最近三个月</string>
+    <string name="month_six">最近六个月</string>
+    <string name="month_twelve">最近一年</string>
+
+    <!-- 分享 -->
+    <string name="share_wx_circle">微信朋友圈</string>
+    <string name="share_wx_friend">微信好友</string>
+    <string name="share_qq">QQ</string>
+    <string name="share_qzone">QQ空间</string>
+    <string name="share_weibo">新浪微博</string>
+    <string name="share_mail">邮件</string>
+    <string name="share_sms">短信</string>
+
+    <!-- 银行流水 -->
+    <string name="bank_spdb">浦发银行</string>
+    <string name="tip_bankwater_apply_percent">申请流水金额所占工资比例</string>
+    <string name="tip_bankwater_support_bank">目前只支持浦发银行</string>
+
+    <!--礼拜红包  -->
+    <string name="hongbao_balance">红包储备</string>
+    <string name="hongbao_income">累计收获</string>
+    <string name="hongbao_remaintime">剩余时间</string>
+    <string name="hongbao_statistics">红包存量/累计</string>
+    <string name="hongbao_agreement"><u>《礼拜红包协议书》</u></string>
+    <string name="hongbao_shake_text1">摇 晃 手 机</string>
+    <string name="hongbao_shake_text2">使 红 包 掉 落</string>
+    <string name="hongbao_shake_loading">正在请求红包数据,请稍等...</string>
+    <string name="go_setting">去设置</string>
+
+    <!--ACRA -->
+    <string name="crash_dialog_title">良薪宝崩溃了！</string>
+    <string name="crash_dialog_text">对不起,良薪宝遇到问题需要关闭,给您造成的不便我们深表歉意！\r\n\r\n一个错误日志已经生成,您可以选择取消或发送,如果您愿意提交,将对我们产品的改进起到极大作用,我们对您表示衷心的感谢！</string>
+    <string name="crash_dialog_ok_toast">谢谢 !</string>
+    <string name="crash_dialog_negativebutton_text">取消</string>
+    <string name="crash_dialog_positivebutton_text">发送</string>
+
+
+</resources>

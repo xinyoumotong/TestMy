@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_salary_empty_flag"
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/item_go_salary_details_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/item_salary_tv_month"
+                style="@style/txt_base"
+                android:text="@string/zero_int"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:textColor="@color/gray_4d"/>
+
+            <TextView
+                android:id="@+id/month"
+                style="@style/txt_base"
+                android:layout_toRightOf="@+id/item_salary_tv_month"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:textColor="@color/gray_4d"
+                android:text="@string/month" />
+
+            <TextView
+                android:id="@+id/item_salary_tv_year"
+                style="@style/txt_base"
+                android:layout_marginLeft="14dp"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_toRightOf="@+id/month"
+                android:layout_centerVertical="true"
+                android:text="@string/zero_int"
+
+                />
+
+            <TextView
+                android:id="@+id/year"
+                style="@style/txt_base"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_toRightOf="@+id/item_salary_tv_year"
+                android:layout_centerVertical="true"
+                android:text="@string/year" />
+
+
+            <TextView
+                android:id="@+id/salary_all"
+                style="@style/txt_base"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_toRightOf="@+id/year"
+                android:layout_centerVertical="true"
+                android:text="@string/salary_all" />
+
+            <ImageView
+                android:id="@+id/item_salary_iv_go_logo"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:contentDescription="@null"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/go_right_2px"
+                />
+            <TextView
+                android:id="@+id/item_salary_tv_salary_integer"
+                style="@style/txt_base"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/item_salary_tv_salary_decimals"
+                android:text="@string/zero_int"
+                android:textColor="#ee4e52"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/item_salary_tv_salary_decimals"
+                style="@style/txt_base"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/item_salary_iv_go_logo"
+                android:layout_alignBottom="@+id/item_salary_tv_salary_integer"
+                android:layout_marginRight="10dp"
+                android:text="@string/zero_decimals"
+                android:textColor="#ee4e52"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/item_salary_iv_money_logo"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:contentDescription="@null"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/item_salary_tv_salary_integer"
+                android:layout_marginRight="2dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/money_2px"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/salary_txt"
+            android:background="@drawable/shape_border_tlr2"
+            android:text="@string/salary_raw" />
+
+        <TextView
+            style="@style/salary_txt"
+            android:background="@drawable/shape_border_tr2"
+            android:text="@string/salary_add" />
+
+        <TextView
+            style="@style/salary_txt"
+            android:background="@drawable/shape_border_tr2"
+            android:text="@string/salary_subtract" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_salary_tv_salary_raw"
+            style="@style/salary_txt"
+            android:background="@drawable/shape_border_blr2"
+            android:text="@string/zero_float" />
+
+        <TextView
+            android:id="@+id/item_salary_tv_salary_add"
+            style="@style/salary_txt"
+            android:background="@drawable/shape_border_rb2"
+            android:text="@string/zero_float" />
+
+        <TextView
+            android:id="@+id/item_salary_tv_salary_subtract"
+            style="@style/salary_txt"
+            android:background="@drawable/shape_border_rb2"
+            android:textColor="#999999"
+            android:text="@string/zero_float" />
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

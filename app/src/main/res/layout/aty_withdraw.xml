@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/main_titlebar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="@string/balance2"
+        android:textColor="@color/gray_99"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/withdraw_tv_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/zero_float"
+        android:textColor="@color/rede63054"
+        android:textSize="30sp" />
+
+    <!-- 提现金额 -->
+    <RelativeLayout
+        android:id="@+id/withdraw_rl_money"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/gray_f8">
+
+        <TextView
+            android:id="@+id/withdraw_tv_money_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/money2"
+            android:textColor="@color/gray_4d"
+            android:textSize="16sp"
+            />
+
+
+        <EditText
+            android:id="@+id/withdraw_et_money"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/withdraw_tv_money_tip"
+            android:background="@null"
+            android:hint="@string/tip_input_withdraw_money2"
+            android:inputType="text"
+            android:maxLength="7"
+            android:textColorHint="@color/gray_99"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp"
+        android:lineSpacingMultiplier="1.4"
+        android:textColor="@color/gray_99"
+        android:textSize="14sp"
+        android:text="@string/tip_withdraw" />
+
+    <Button
+        android:id="@+id/withdraw_btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_btn_red"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+
+        />
+
+
+</LinearLayout>

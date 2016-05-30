@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+  >
+     <include android:id="@+id/titlebar" 
+       layout="@layout/main_titlebar" 
+     />
+     
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+     >
+
+	     <android.support.v4.widget.SwipeRefreshLayout
+	        android:id="@+id/hongbao_swipeRefreshLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	      >
+		     <ScrollView 
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="@color/hongbao_bg"
+		      >
+		        <!-- 顶部 -->
+		        <LinearLayout 
+		          android:id="@+id/hongbao_ll_top"
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:orientation="vertical" 
+		        >
+		       
+		         <LinearLayout
+		             android:layout_width="fill_parent"
+		             android:layout_height="150dp"
+		             android:orientation="horizontal"
+		          >
+		          
+		             <!-- 1 -->
+		             <LinearLayout 
+		                 android:layout_width="0dp"
+		                 android:layout_height="fill_parent"
+		                 android:layout_weight="2"
+		                 android:orientation="vertical"
+		              >
+		             
+		                 <!-- 红包储备 -->
+			              <LinearLayout style="@style/hongbao_ll_info1">
+			                  
+			                  <TextView 
+			                      style="@style/hongbao_title_info1"
+			                      android:text="@string/hongbao_balance"
+			                  />
+			                  <TextView 
+			                      android:id="@+id/hongbao_tv_balance"
+			                      style="@style/hongbao_value_info1"
+			                      android:text="@string/zero_float"
+			                  />
+			               
+			              </LinearLayout>
+			              
+			              <!-- 累计收获 -->
+			              <LinearLayout style="@style/hongbao_ll_info1">
+			                  
+			                  <TextView 
+			                      style="@style/hongbao_title_info1"
+			                      android:text="@string/hongbao_income"
+			                  />
+			                  
+			                  <TextView 
+			                      android:id="@+id/hongbao_tv_income"
+			                      style="@style/hongbao_value_info1"
+			                      android:text="@string/zero_float"
+			                   />
+			                  
+			              </LinearLayout>
+			              
+			              <!-- 剩余时间 -->
+			              <LinearLayout style="@style/hongbao_ll_info1" >
+			                  
+			                   <TextView 
+			                      style="@style/hongbao_title_info1"
+			                      android:text="@string/hongbao_remaintime"
+			                   />
+			                  
+			                   <TextView 
+			                      android:id="@+id/hongbao_tv_remaintime"
+			                      style="@style/hongbao_value_info1_remaintime"
+			                      android:text="@string/zero_int"
+			                   />
+			             </LinearLayout>
+		                 
+		             </LinearLayout>
+		             
+		             
+		             <!-- 2 -->
+		             <LinearLayout 
+		                 android:layout_width="0dp"
+		                 android:layout_height="fill_parent"
+		                 android:layout_weight="1"
+		                 android:orientation="vertical"
+		                 android:layout_margin="2dp"
+		                 android:gravity="center_horizontal"
+		                 android:background="@drawable/shape_hongbao_info2"
+		             >
+		               
+		                 <TextView 
+		                     android:layout_width="wrap_content"
+		                     android:layout_height="wrap_content"
+		                     android:layout_marginTop="20dp"
+		                     android:text="@string/hongbao_statistics"
+		                     android:textColor="@color/white"
+		                  />
+		                 
+		                 <LinearLayout 
+		                     android:layout_width="fill_parent"
+		                     android:layout_height="fill_parent"
+		                     android:orientation="horizontal"
+		                     android:gravity="center"
+		                 >
+			                   
+		                      <TextView 
+		                        android:id="@+id/hongbao_tv_waitpackets"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:text="@string/zero_int"
+		                        android:textColor="#FFDD99"
+		                        android:textSize="30sp"
+		                      />
+		                      
+		                      <TextView 
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:text="@string/forward_slash"
+		                        android:textColor="@color/white"
+		                        android:textSize="16sp"
+		                      />
+		                      <TextView 
+		                        android:id="@+id/hongbao_tv_totalpackets"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:text="@string/zero_int"
+		                        android:textColor="@color/white"
+		                        android:textSize="16sp"
+		                      
+		                      />
+		                 </LinearLayout>
+		             </LinearLayout>
+		             
+		          </LinearLayout>
+	         
+		          <!-- 红包袋子 -->
+		          <RelativeLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="15dp"
+		          >
+		             <ImageView
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:layout_centerInParent="true"
+		               android:src="@mipmap/hongbao_bg"
+		               android:contentDescription="@null"
+		             />
+		             <ImageView 
+		                 android:id="@+id/hongbao_iv_week"
+		                 style="@style/img_base"
+		                 android:layout_centerInParent="true"
+		                 android:src="@mipmap/week_default"
+		              />
+		             
+		         </RelativeLayout>
+	         
+	
+		         <Button 
+		             android:id="@+id/hongbao_btn_shake"
+		             android:layout_width="wrap_content"
+		             android:layout_height="wrap_content"
+		             android:background="@drawable/selector_btn_shake"
+		             android:layout_gravity="center_horizontal"
+		             android:layout_marginTop="15dp"
+		          />
+	    
+	       </LinearLayout> 
+	     </ScrollView>
+	   </android.support.v4.widget.SwipeRefreshLayout>
+    
+	    <!--底部 -->
+      <LinearLayout 
+          android:id="@+id/hongbao_ll_bottom"
+          android:layout_width="fill_parent"
+          android:layout_height="40dp"
+          android:layout_alignParentBottom="true"
+          android:orientation="horizontal"
+        >
+         
+          <Button 
+              android:id="@+id/hongbao_btn_setting"
+              style="@style/hongbao_btn_bottom"
+              android:text="@string/setting"
+           />
+          
+          <View style="@style/divider_vertical" />
+          
+           <Button 
+              android:id="@+id/hongbao_btn_rollout"
+              style="@style/hongbao_btn_bottom"
+              android:text="@string/rollout"
+           />
+           
+       </LinearLayout> 
+
+         
+       <hotP2B.WageGainTools.android.ui.widget.EmptyLayout
+         android:id="@+id/hongbao_empty_layout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:visibility="gone" 
+       />
+    
+       
+    </RelativeLayout>
+
+</LinearLayout>

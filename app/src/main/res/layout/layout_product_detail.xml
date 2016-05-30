@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 头部 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 图标 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/product_detail_iv_HeartState"
+                        style="@style/product_img_type"
+                        android:src="@mipmap/icon_invest_type_1" />
+
+                    <ImageView
+                        android:id="@+id/product_detail_iv_ConscienceState"
+                        style="@style/product_img_type"
+                        android:src="@mipmap/icon_invest_type_2" />
+
+                    <ImageView
+                        android:id="@+id/product_detail_iv_RealState"
+                        style="@style/product_img_type"
+                        android:src="@mipmap/icon_invest_type_3" />
+
+                    <ImageView
+                        android:id="@+id/product_detail_iv_CreditState"
+                        style="@style/product_img_type"
+                        android:src="@mipmap/icon_invest_type_4" />
+
+                    <ImageView
+                        android:id="@+id/product_detail_iv_SecurityState"
+                        style="@style/product_img_type"
+                        android:src="@mipmap/icon_invest_type_5" />
+
+                    <ImageView
+                        android:id="@+id/product_detail_iv_Star"
+                        style="@style/product_img_type"
+                        android:src="@mipmap/icon_1a" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/product_detail_iv_PaidState"
+                    style="@style/product_img_type"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_invest_state_ongoing" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/product_detail_name"
+                style="@style/product_detail_name"
+                android:text="名字" />
+
+            <View style="@style/divider_horizontal2"></View>
+
+            <!-- 详情 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <View style="@style/divider_vertical2"></View>
+
+                    <LinearLayout style="@style/product_detail_ll_item">
+
+                        <TextView
+                            style="@style/product_detail_item_title"
+                            android:text="@string/project_year_interest"
+                            android:textColor="@color/rede63054" />
+
+                        <TextView
+                            android:id="@+id/product_detail_year_interest"
+                            style="@style/product_detail_item_value"
+                            android:text="@string/unknown"
+                            android:textColor="@color/rede63054" />
+                    </LinearLayout>
+
+                    <View style="@style/divider_vertical2"></View>
+
+                    <LinearLayout style="@style/product_detail_ll_item">
+
+                        <TextView
+                            style="@style/product_detail_item_title"
+                            android:text="@string/project_invest_minmoney" />
+
+                        <TextView
+                            android:id="@+id/product_detail_invest_minmoney"
+                            style="@style/product_detail_item_value"
+                            android:text="@string/unknown" />
+                    </LinearLayout>
+
+                    <View style="@style/divider_vertical2"></View>
+
+                    <LinearLayout style="@style/product_detail_ll_item">
+
+                        <TextView
+                            style="@style/product_detail_item_title"
+                            android:text="@string/project_total" />
+
+                        <TextView
+                            android:id="@+id/product_detail_total"
+                            style="@style/product_detail_item_value"
+                            android:text="@string/unknown" />
+                    </LinearLayout>
+
+                    <View style="@style/divider_vertical2"></View>
+
+                    <LinearLayout style="@style/product_detail_ll_item">
+
+                        <TextView
+                            style="@style/product_detail_item_title"
+                            android:text="@string/project_duration" />
+
+                        <TextView
+                            android:id="@+id/product_detail_duration"
+                            style="@style/product_detail_item_value"
+                            android:text="@string/unknown" />
+                    </LinearLayout>
+
+                    <View style="@style/divider_vertical2"></View>
+                </LinearLayout>
+
+                <View style="@style/divider_horizontal2"></View>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <View style="@style/divider_vertical2"></View>
+
+                    <LinearLayout style="@style/product_detail_ll_item">
+
+                        <TextView
+                            style="@style/product_detail_item_title"
+                            android:text="@string/project_chargingway" />
+
+                        <TextView
+                            android:id="@+id/product_detail_chargingway"
+                            style="@style/product_detail_item_value"
+                            android:text="@string/unknown" />
+
+                    </LinearLayout>
+
+                    <View style="@style/divider_vertical2"></View>
+
+                    <LinearLayout
+                        style="@style/product_detail_ll_item"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/product_detail_item_title"
+                            android:text="@string/project_remainmoney" />
+
+                        <TextView
+                            android:id="@+id/product_detail_remainmoney"
+                            style="@style/product_detail_item_value"
+                            android:text="@string/unknown"
+                            android:textColor="@color/gray_4d" />
+                    </LinearLayout>
+
+                    <View style="@style/divider_vertical2"></View>
+
+                    <LinearLayout style="@style/product_detail_ll_item">
+
+                        <TextView
+                            style="@style/product_detail_item_title"
+                            android:text="@string/project_remaintime" />
+
+                        <TextView
+                            android:id="@+id/product_detail_remaintime"
+                            style="@style/product_detail_item_value"
+                            android:text="@string/unknown" />
+                    </LinearLayout>
+
+                    <View style="@style/divider_vertical2"></View>
+
+                    <LinearLayout style="@style/product_detail_ll_item">
+
+                        <TextView
+                            style="@style/product_detail_item_title"
+                            android:text="@string/project_progress" />
+
+                        <TextView
+                            android:id="@+id/product_detail_percent"
+                            style="@style/product_detail_item_value"
+                            android:text="@string/zero_percent" />
+
+                    </LinearLayout>
+
+                    <View style="@style/divider_vertical2"></View>
+                </LinearLayout>
+
+                <View style="@style/divider_horizontal2"></View>
+
+            </LinearLayout>
+            <!-- end detail -->
+
+            <!--&lt;!&ndash; 进度 &ndash;&gt;-->
+            <!--<LinearLayout-->
+            <!--style="@style/ll_horizontal_base"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="5dp">-->
+            <!--<ProgressBar-->
+            <!--android:id="@+id/product_detail_progress"-->
+            <!--style="@style/progressbar_red"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:max="100" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!-- 尾部 -->
+        <LinearLayout
+            android:id="@+id/product_detail_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View style="@style/divider_horizontal2" />
+
+            <Button
+                android:id="@+id/product_detail_btn_invest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_btn_submit"
+                android:enabled="false"
+                android:text="@string/project_invest"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!-- 主内容 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/product_detail_footer"
+            android:layout_marginBottom="2dp">
+
+            <WebView
+                android:id="@+id/product_detail_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <hotP2B.WageGainTools.android.ui.widget.EmptyLayout
+                android:id="@+id/product_detail_empty_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

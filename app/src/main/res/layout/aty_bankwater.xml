@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+ >
+ 
+     <include
+	    android:id="@+id/titlebar"
+	    layout="@layout/main_titlebar"
+	 />
+     
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:orientation="vertical"
+      >
+      
+          
+	        <TextView 
+	           android:layout_width="wrap_content" 
+	           android:layout_height="wrap_content" 
+	           android:text="@string/tip_bankwater_apply_percent"  
+	         />
+	        
+	        <RadioGroup 
+	           android:id="@+id/bankwater_rg_percent"
+		       android:layout_width="fill_parent"
+		       android:layout_height="30dp"
+		       android:orientation="horizontal"
+	       >
+		       <RadioButton 
+		           android:id="@+id/bankwater_rb_percent_80"
+		           style="@style/bankwater_radiobutton"
+		           android:text="@string/percent_80"
+		       />
+		       <RadioButton 
+		           android:id="@+id/bankwater_rb_percent_90"
+		           style="@style/bankwater_radiobutton"
+		           android:text="@string/percent_90"
+		       />
+		       <RadioButton 
+		           android:id="@+id/bankwater_rb_percent_100"
+		           style="@style/bankwater_radiobutton"
+		           android:text="@string/percent_100"
+		       />
+	       
+	       </RadioGroup>
+	       
+	       <TextView 
+		       android:layout_width="wrap_content" 
+		       android:layout_height="wrap_content" 
+		       android:layout_marginTop="10dp"
+		       android:text="@string/tip_bankwater_support_bank"  
+	       />
+	   
+	      <RelativeLayout 
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:background="@drawable/shape_border_all"
+	         android:orientation="vertical" 
+	        android:layout_marginTop="5dp"
+	       >
+	
+	          <ImageView
+			     android:id="@+id/bankwater_iv_bank_logo"
+			     android:layout_width="30dp"
+			     android:layout_height="30dp"
+			     android:layout_alignParentLeft="true"
+			     android:layout_alignParentStart="true"
+			     android:layout_centerVertical="true"
+		         android:layout_marginLeft="15dp"
+		         android:layout_marginStart="15dp"
+			     android:scaleType="fitCenter"
+			     android:contentDescription="@null"
+			     android:src="@mipmap/icon_card_spdb"
+			  />
+	
+			  <TextView
+			     android:id="@+id/bankwater_tv_bank_name"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_toRightOf="@id/bankwater_iv_bank_logo"
+			     android:layout_centerVertical="true"
+			     android:layout_marginLeft="10dp"
+			     android:textSize="14sp"
+			     android:text="@string/bank_spdb"
+	          />
+			  
+			  <ImageView 
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:contentDescription="@null"
+			     android:layout_centerVertical="true"
+			     android:layout_alignParentRight="true"
+			     android:src="@mipmap/icon_arrow_right"
+			   />
+			  
+	     </RelativeLayout> 
+	     
+	     <!-- 银行卡号-->
+	     <RelativeLayout 
+	         android:layout_width="fill_parent" 
+	         android:layout_height="50.0dip" 
+	         android:layout_marginTop="5.0dip" 
+	      >
+	            <hotP2B.WageGainTools.android.ui.widget.EditTextWithDel 
+	                android:id="@+id/bankwater_et_cardNumber"
+	                style="@style/rl_edit_del" 
+	                android:hint="@string/tip_inputBankCard" 
+	                android:maxLength="20"
+	                android:drawableLeft="@mipmap/icon_bankcard"
+	            />
+	            <requestFocus />
+	                
+	            <ImageView 
+	                android:id="@+id/bankwater_iv_mobile_clear" 
+	                style="@style/rl_edit_del_image"
+	            />
+	       </RelativeLayout>
+	            
+	      <!-- 验证码 -->
+	      <RelativeLayout   
+	          android:layout_width="fill_parent" 
+	          android:layout_height="50.0dip" 
+	          android:layout_marginTop="5.0dip"  
+	       >
+	          <hotP2B.WageGainTools.android.ui.widget.EditTextWithDel
+	              android:id="@+id/bankwater_et_verifyCode" 
+	              style="@style/rl_edit_del" 
+	              android:paddingRight="100.0dip"  
+	              android:inputType="number" 
+	              android:hint="@string/verifyCode" 
+	              android:maxLength="6"
+	              android:drawableLeft="@mipmap/icon_sms"
+	          />
+	          <TextView 
+	              android:id="@+id/bankwater_tv_validation_code" 
+	              android:gravity="center" 
+	              android:background="@drawable/selector_send_valicode_bg" 
+	              android:padding="5.0dip" 
+	              android:layout_width="wrap_content" 
+	              android:layout_height="wrap_content" 
+	              android:text="@string/getVerifyCode" 
+	              android:textColor="@color/white" 
+	              android:layout_alignParentRight="true" 
+	              
+	          />
+	      </RelativeLayout>
+	      
+	       <Button 
+	         android:id="@+id/bankwater_btn_next"
+	         android:layout_width="fill_parent"
+	         android:layout_height="50dp"
+	         android:layout_marginTop="10dp"
+	         android:background="@drawable/selector_btn_blue"
+	         android:text="@string/next"
+	         android:textColor="@color/white"
+	       />
+	       
+	       <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/tip_apply_bankwater"
+           />
+	        
+    </LinearLayout>
+     
+</LinearLayout>

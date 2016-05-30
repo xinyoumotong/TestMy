@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+
+>
+   <LinearLayout 
+       android:id="@+id/share_layout" 
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:layout_alignParentBottom="true"
+       android:gravity="center_horizontal" 
+       android:orientation="vertical" 
+       android:background="#eee"
+    >
+	    <LinearLayout android:orientation="horizontal"  android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/share_wx_circle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+	            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/selector_img_share_wx_circle" />
+	            <TextView android:textSize="12.0dip" android:textColor="#ff8d8d8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/share_wx_circle" />
+	        </LinearLayout>
+	        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/share_wx_friend" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+	            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/selector_img_share_wx_friend" />
+	            <TextView android:textSize="12.0dip" android:textColor="#ff8d8d8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/share_wx_friend" />
+	        </LinearLayout>
+	        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/share_qq"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+	            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/selector_img_share_qq" />
+	            <TextView android:textSize="12.0dip" android:textColor="#ff8d8d8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/share_qq" />
+	        </LinearLayout>
+	        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/share_qzone"  android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+	            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/selector_img_share_qzone" />
+	            <TextView android:textSize="12.0dip" android:textColor="#ff8d8d8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/share_qzone" />
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+        <TextView 
+           android:id="@+id/share_cancel" 
+           android:layout_width="fill_parent" 
+           android:layout_height="wrap_content" 
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:gravity="center" 
+           android:background="@drawable/selector_btn_cancel" 
+       	   android:textSize="16.0sp" 
+           android:textColor="@color/black"  
+           android:text="@string/cancel"
+        />
+	    
+   </LinearLayout>
+
+     
+</RelativeLayout>

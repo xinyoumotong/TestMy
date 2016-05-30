@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+ >
+
+  <android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/welcome1_swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    
+  <hotP2B.WageGainTools.android.ui.widget.KJScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   >
+     <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+     >
+         
+         <!-- 用户信息 -->
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="center"
+		    android:background="@color/gray_4d"
+		    android:padding="5dp"
+		 >
+		 
+		     <TextView
+		        android:id="@+id/welcome1_tv_companyName"
+		        style="@style/txt_white"
+		     />
+		
+		      <ImageView
+		          android:layout_width="10dp"
+		          android:layout_height="10dp"
+		          android:layout_marginLeft="5dp"
+		          android:layout_marginRight="5dp"
+		          android:scaleType="fitXY"
+		          android:src="@mipmap/icon_userlogo"
+		          android:contentDescription="@null"
+		     />
+		
+		     <TextView
+		          android:id="@+id/welcome1_tv_realName"
+		          style="@style/txt_white"
+		      />
+		    
+		</LinearLayout>
+
+		<!-- 资产信息 -->
+		<RelativeLayout
+		    android:id="@+id/welcome1_rl_assets"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/light_red"
+		    android:orientation="horizontal"
+		    android:padding="5dp"
+		
+		>
+		    
+		   <TextView
+		        style="@style/txt_white"
+		        android:layout_centerVertical="true"
+		        android:text="@string/assets_all"
+		   />
+		
+		    <TextView
+		        android:id="@+id/welcome1_tv_assets"
+	            style="@style/txt_white"
+                android:layout_centerInParent="true"
+		        android:text="@string/unknown"
+		        android:textSize="35sp" 
+		    />   
+		   
+		</RelativeLayout>
+         
+		
+		<!-- 安全信息 -->
+
+        <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/light_red"
+             android:padding="5dp"
+             android:orientation="horizontal" 
+             android:gravity="center"
+        >
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_gravity="center_vertical" 
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+            />
+               <TextView
+                  style="@style/txt_white"
+                  android:drawableLeft="@mipmap/icon_safeguard2"
+                  android:drawableStart="@mipmap/icon_safeguard2"
+                  android:drawablePadding="4dp"
+                  android:text="@string/safeguard"
+               />
+           <View
+               android:layout_width="40dp"
+               android:layout_height="2dp"
+               android:background="@color/white"
+               android:layout_gravity="center_vertical" 
+               android:layout_marginLeft="2dp"
+               android:layout_marginStart="2dp"
+           />    
+       </LinearLayout>
+   
+		
+		<!-- 收益信息 -->
+		<LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="60dp"
+           android:orientation="horizontal" 
+         >
+
+		    
+             <LinearLayout
+                 android:id="@+id/welcome1_rl_lastday_income"
+                 style="@style/welcome1_list_ll"
+             >
+
+                <TextView
+                    android:id="@+id/welcome1_tv_lastday_tip"
+                    style="@style/welcome1_list_tv"
+                    android:text="@string/lastday_income"
+                />
+
+                <TextView
+                     android:id="@+id/welcome1_tv_lastday_income"
+                     style="@style/welcome1_list_tv_unknown"
+
+                />
+
+            </LinearLayout>
+                
+             <View style="@style/divider_vertical" />
+
+
+            <LinearLayout
+                android:id="@+id/welcome1_rl_month_income"
+                 style="@style/welcome1_list_ll"
+            >
+
+                <TextView
+                    android:id="@+id/welcome1_tv_month_tip"
+                    style="@style/welcome1_list_tv"
+                    android:text="@string/month_income"
+                />
+
+                <TextView
+                    android:id="@+id/welcome1_tv_month_income"
+                    style="@style/welcome1_list_tv_unknown"
+                 />
+            </LinearLayout>
+         </LinearLayout>
+		
+         <View style="@style/divider_horizontal" />
+		<!-- 银行卡信息 -->
+		<LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="60dp"
+           android:orientation="horizontal" 
+         >
+            <LinearLayout
+                 android:id="@+id/welcome1_rl_bankcard"
+                 style="@style/welcome1_list_ll"
+             >
+
+                <TextView
+                    android:id="@+id/welcome1_tv_bankcard_tip"
+                    style="@style/welcome1_list_tv"
+                    android:drawableLeft="@mipmap/icon_bankcard"
+                    android:drawableStart="@mipmap/icon_bankcard"
+                    android:text="@string/bankcard"
+                />
+
+                <TextView
+                    android:id="@+id/welcome1_tv_bankcard"
+                    style="@style/welcome1_list_tv_unknown"
+
+                />
+
+            </LinearLayout>
+             <View style="@style/divider_vertical" />
+            
+             <LinearLayout
+                 android:id="@+id/welcome1_rl_balance"
+                 style="@style/welcome1_list_ll"
+             >
+
+                <TextView
+                    android:id="@+id/welcome1_tv_balance_tip"
+                    style="@style/welcome1_list_tv"
+                    android:drawableLeft="@mipmap/icon_balance"
+                    android:drawableStart="@mipmap/icon_balance"
+                    android:text="@string/balance"
+
+                />
+
+                <TextView
+                     android:id="@+id/welcome1_tv_balance"
+                     style="@style/welcome1_list_tv_unknown"
+                />
+
+            </LinearLayout>
+            
+              <View style="@style/divider_vertical" />
+              
+              <LinearLayout
+                 android:id="@+id/welcome1_rl_message"
+                 style="@style/welcome1_list_ll"
+              >
+
+                <TextView
+                    android:id="@+id/welcome1_tv_message_tip"
+                    style="@style/welcome1_list_tv"
+                    android:drawableLeft="@mipmap/icon_message"
+                    android:drawableStart="@mipmap/icon_message"
+                    android:text="@string/message"
+                />
+
+                <TextView
+                     android:id="@+id/welcome1_tv_message"
+                     style="@style/welcome1_list_tv_unknown"
+                />
+
+            </LinearLayout>
+            
+	   </LinearLayout>
+	   
+		<View style="@style/divider_horizontal" />
+		
+		<!-- 新手标 -->
+		<LinearLayout
+		   android:id="@+id/welcome1_ll_newbid"
+		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"
+		   android:layout_marginLeft="10dp"
+		   android:layout_marginRight="10dp"
+		   android:layout_marginTop="5dp"
+		   android:layout_marginBottom="5dp"
+		   android:orientation="vertical"
+		   android:visibility="gone"
+		 >
+
+             <pl.droidsonroids.gif.GifImageView
+                 android:id="@+id/welcome1_giv_newbid"
+                 android:layout_width="match_parent"
+                 android:layout_height="60dp"
+                 android:src="@mipmap/newbid"
+              /> 
+              
+             <LinearLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/shape_border_lrb_red"
+                 android:orientation="horizontal"
+                 android:gravity="center"
+             >
+	              <LinearLayout style="@style/ll_horizontal_weight">
+	                     <TextView 
+	                 style="@style/txt_small"
+	                 android:text="@string/project_year_interest"
+	               />
+	              
+	               <TextView 
+	                 android:id="@+id/welcome1_newbid_year_interest"
+	                 style="@style/welcome1_newbid_value"
+	                 android:text="@string/unknown"
+	               />
+	                                
+	              </LinearLayout>
+	              <View style="@style/divider_vertical" />
+	            
+	              <LinearLayout style="@style/ll_horizontal_weight">
+	                     <TextView 
+	                 style="@style/txt_small"
+	                 android:text="@string/project_invest_minmoney"
+	               />
+	              
+	               <TextView 
+	                 android:id="@+id/welcome1_newbid_invest_minmoney"
+	                 style="@style/welcome1_newbid_value"
+	                 android:text="@string/unknown"
+	               />
+	                                
+	              </LinearLayout>
+	              <View style="@style/divider_vertical" />
+	              
+	              <LinearLayout style="@style/ll_horizontal_weight">
+	                <TextView 
+	                 style="@style/txt_small"
+	                 android:text="@string/project_duration"
+	               />
+	              
+	               <TextView 
+	                 android:id="@+id/welcome1_newbid_duration"
+	                 style="@style/welcome1_newbid_value"
+	                 android:text="@string/unknown"
+	               />  
+	             </LinearLayout>
+             </LinearLayout>
+               
+
+
+		</LinearLayout>
+		
+	   
+		<!-- 列表 -->
+	   <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" 
+           android:layout_marginTop="5dp"
+                
+       >
+          <!-- 礼拜红包-->
+          <LinearLayout
+              android:id="@+id/welcome1_rl_hongbao"
+              style="@style/welcome1_list_ll"
+          >
+
+               <ImageView
+                   android:id="@+id/welcome1_iv_rrx"
+                   style="@style/welcome1_list_iv"
+                   android:src="@mipmap/icon_rrx"
+               />
+
+               <TextView
+                   style="@style/welcome1_list_tv_grid"
+                   android:text="@string/hongbao"
+                />
+          </LinearLayout>
+
+          <!-- 充值-->
+          <LinearLayout
+              android:id="@+id/welcome1_rl_recharge"
+             style="@style/welcome1_list_ll"
+          >
+
+               <ImageView
+                   android:id="@+id/welcome1_iv_licai"
+                   style="@style/welcome1_list_iv"
+                   android:src="@mipmap/icon_licai"
+               />
+
+               <TextView
+                  style="@style/welcome1_list_tv_grid"
+                   android:text="@string/recharge"
+                />
+          </LinearLayout>
+
+           <!-- 提现-->
+          <LinearLayout
+              android:id="@+id/welcome1_rl_withdraw"
+              style="@style/welcome1_list_ll"
+          >
+
+               <ImageView
+                   android:id="@+id/welcome1_iv_withdraw"
+                   style="@style/welcome1_list_iv"
+                   android:src="@mipmap/icon_withdraw"
+               />
+
+               <TextView
+                   style="@style/welcome1_list_tv_grid"
+                   android:text="@string/withdraw"
+                
+               />
+          </LinearLayout>   
+              
+	  </LinearLayout>
+	      
+	  <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" 
+                
+       >
+          <!-- 工资条 -->
+          <LinearLayout
+              android:id="@+id/welcome1_rl_salary"
+              style="@style/welcome1_list_ll"
+          >
+
+               <ImageView
+                   android:id="@+id/welcome1_iv_salary"
+                   style="@style/welcome1_list_iv"
+                   android:src="@mipmap/icon_salary"
+               />
+
+               <TextView
+                   style="@style/welcome1_list_tv_grid"
+                   android:text="@string/salary"
+
+               />
+          </LinearLayout>
+
+          <!-- 安全-->
+          <LinearLayout
+              android:id="@+id/welcome1_rl_safe"
+              style="@style/welcome1_list_ll"
+          >
+
+               <ImageView
+                   android:id="@+id/welcome1_iv_safe"
+                   style="@style/welcome1_list_iv"
+                   android:src="@mipmap/icon_safe"
+               />
+
+               <TextView
+                   style="@style/welcome1_list_tv_grid"
+                   android:text="@string/safe"
+
+               />
+          </LinearLayout>
+
+           <!-- 新手指引 -->
+           <LinearLayout
+             android:id="@+id/welcome1_rl_manual"
+             style="@style/welcome1_list_ll"
+           > 
+           
+             <ImageView
+                   android:id="@+id/welcome1_iv_manual"
+                   style="@style/welcome1_list_iv"
+                   android:src="@mipmap/icon_manual"
+               />
+
+               <TextView
+                   style="@style/welcome1_list_tv_grid"
+                   android:text="@string/manual"
+               />
+           </LinearLayout>
+              
+	    </LinearLayout>  
+	    
+	  
+     </LinearLayout>  
+   </hotP2B.WageGainTools.android.ui.widget.KJScrollView>
+
+  </android.support.v4.widget.SwipeRefreshLayout>
+
+    <hotP2B.WageGainTools.android.ui.widget.EmptyLayout
+        android:id="@+id/welcome1_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" 
+    />
+ 	
+    
+   
+</RelativeLayout>

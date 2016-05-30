@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true"
+    android:background="@color/bg"
+   >
+   
+     <include
+	     android:id="@+id/titlebar"
+	     layout="@layout/main_titlebar"
+	  />
+     
+     <RadioGroup
+        android:id="@+id/invest_history_rg_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" 
+     >
+
+        <RadioButton
+            android:id="@+id/invest_history_rb_bar1"
+            style="@style/CustomRadioButton"
+            android:background="@drawable/selector_licaibar_btn_bg_left"
+            android:checked="true"
+            android:text="@string/invest_history_item1" 
+        />
+        <RadioButton
+            android:id="@+id/invest_history_rb_bar2"
+            style="@style/CustomRadioButton"
+            android:background="@drawable/selector_licaibar_btn_bg_nor"
+            android:text="@string/invest_history_item2" 
+         />
+        <RadioButton
+            android:id="@+id/invest_history_rb_bar3"
+            style="@style/CustomRadioButton"
+            android:background="@drawable/selector_licaibar_btn_bg_right"
+            android:text="@string/invest_history_item3" 
+        />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/invest_history_rg_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2dp"
+    >
+        
+	     <hotP2B.WageGainTools.android.ui.widget.listview.PullToRefreshList
+	        android:id="@+id/invest_history_swiperefreshlayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:fadingEdge="none" 
+	     />
+
+	     <hotP2B.WageGainTools.android.ui.widget.EmptyLayout
+	        android:id="@+id/invest_history_empty_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:visibility="gone" 
+	     />
+    </RelativeLayout>
+    
+
+</RelativeLayout>

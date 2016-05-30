@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+  >
+    <RelativeLayout android:background="@drawable/dialog_corner"
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:layout_alignParentLeft="true" 
+         android:layout_centerVertical="true"
+    >
+        <hotP2B.WageGainTools.android.dialog.CircularProgressView 
+            android:id="@+id/loading_progress" 
+            android:layout_width="40.0dip" 
+            android:layout_height="40.0dip" 
+            android:layout_marginLeft="20.0dip" 
+            android:layout_marginTop="10.0dip" 
+            android:layout_marginBottom="10.0dip" 
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true" 
+            app:cpv_indeterminate="true"
+            app:cpv_thickness="3dp"
+       />
+       <RelativeLayout 
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true">
+            <TextView 
+                android:id="@+id/loading_message" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textSize="16.0sp" 
+
+            />
+      </RelativeLayout>
+  </RelativeLayout>
+</RelativeLayout>

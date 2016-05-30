@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+  >
+     <include android:id="@+id/titlebar" 
+       layout="@layout/main_titlebar" 
+     />
+
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      
+    >
+        <!-- 项目名称 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+         >
+          <TextView 
+             android:id="@+id/product_detail_name"
+             style="@style/txt_base"
+             android:layout_marginLeft="5dp"
+          />
+           
+       </LinearLayout>
+        <!-- 起投金额 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+         >
+         
+          <TextView 
+             style="@style/product_history_item_title"
+             android:text="@string/project_invest_minmoney"
+           />
+        
+          <TextView 
+             android:id="@+id/product_detail_invest_minmoney"
+             style="@style/product_history_item_value"
+          />
+           
+       </LinearLayout>
+       
+         <!-- 限投余额 -->
+	    <LinearLayout 
+	        android:id="@+id/invest_ll_maxmoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+         >
+         
+          <TextView 
+             style="@style/product_history_item_title"
+             android:text="@string/project_invest_maxmoney"
+           />
+        
+          <TextView 
+             android:id="@+id/product_detail_invest_maxmoney"
+             style="@style/product_history_item_value"
+          />
+           
+       </LinearLayout>
+       
+       <!--剩余可投 -->
+	   <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+         >
+         
+          <TextView 
+             style="@style/product_history_item_title"
+             android:text="@string/project_remainmoney"
+           />
+        
+          <TextView 
+             android:id="@+id/product_detail_remainmoney"
+             style="@style/product_history_item_value"
+          />
+           
+       </LinearLayout>
+       
+	    <!-- 账户余额 -->
+	    <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+         >
+         
+          <TextView 
+             style="@style/product_history_item_title"
+             android:text="@string/accountBalance"
+           />
+        
+          <TextView 
+             android:id="@+id/product_detail_invest_balance"
+             style="@style/product_history_item_value"
+          />
+           
+       </LinearLayout>
+       
+	   
+    </LinearLayout>
+     
+     <!-- 投资金额 -->
+     <RelativeLayout 
+         android:layout_width="fill_parent" 
+         android:layout_height="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+         android:background="@color/white" 
+      >
+
+          <TextView 
+              android:id="@+id/invest_tv_money_tip"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+             
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="20dp"
+              android:text="@string/invest_money"
+              android:textSize="16sp"
+           />
+          
+          <EditText 
+              android:id="@+id/invest_et_money"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@id/invest_tv_money_tip"
+              android:layout_centerVertical="true"
+              android:background="@null"
+              android:hint="@string/tip_input_invest_money"
+              android:textSize="16sp"
+              android:textColorHint="@color/hint_text_color"
+              
+              android:maxLength="8" 
+          />
+          
+                
+    </RelativeLayout>
+     
+     <!-- 协议 -->
+     <RelativeLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:paddingLeft="5dp"
+         android:paddingRight="5dp" 
+      >
+         
+           <CheckBox 
+			 android:id="@+id/invest_cb_agree"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+			 android:layout_alignParentLeft="true"
+			 android:layout_centerVertical="true"
+			 android:layout_marginLeft="5dp"
+	         android:button="@drawable/selector_checkbox"
+	         android:text="@string/agree"
+	         android:checked="true"
+	       />
+         
+           <TextView 
+             android:id="@+id/invest_tv_agreement"
+             style="@style/txt_red"
+             android:layout_toRightOf="@id/invest_cb_agree"
+             android:layout_marginLeft="1dp"
+             android:layout_centerVertical="true"
+             android:text="@string/agreement"
+           /> 
+     </RelativeLayout>
+     
+      <Button 
+           android:id="@+id/product_detail_btn_invest" 
+           android:layout_width="fill_parent" 
+	       android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:text="@string/project_invest_confirm" 
+           android:textColor="@color/white"
+           android:background="@drawable/selector_btn_submit" 
+      />
+
+</LinearLayout>

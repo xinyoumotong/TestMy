@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hotP2B.WageGainTools.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- ACRA -->
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+    <application
+        android:name=".AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AppStart"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".plugin.AppThirdStart"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <data
+                    android:host="mobileapp.wgtools"
+                    android:scheme="hotp2b" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppMain"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppGuide"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppBrowser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppGestureVerify"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppGestureSetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppGestureModify"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppSimpleBack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppHuifu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppWithdraw"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppBalance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppBalanceDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppNotice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppIncome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppDaygain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppSalary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppSalaryDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppManual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppProductDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppInvest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppInvestHistoryNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppAssets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppRecharge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppBankWater"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppHongbao"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppHongbaoRecord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppHongbaoSetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppHongbaoShake"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppHongbaoRollout"
+            android:screenOrientation="portrait" />
+
+        <!-- 监听系统启动事件 -->
+        <receiver
+            android:name=".receiver.BootReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.AlarmReceiver">
+            <intent-filter>
+                <action android:name="hotP2B.WageGainTools.android.pushmessage.alarm" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 后台守护进程 -->
+        <service
+            android:name=".service.DaemonService"
+            android:process=":DaemonService" />
+
+        <!-- ACRA异常捕获 -->
+        <activity
+            android:name="org.acra.CrashReportDialog"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.Dialog" />
+        <activity
+            android:name="org.acra.dialog.CrashReportDialog"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.Dialog" />
+
+        <service
+            android:name="org.acra.sender.SenderService"
+            android:exported="false"
+            android:process=":acra" />
+
+        <activity android:name=".AppSafe"></activity>
+    </application>
+
+</manifest>

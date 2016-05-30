@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+  >
+    
+     <include android:id="@+id/titlebar" 
+       layout="@layout/main_titlebar" 
+     />
+
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:background="@color/hongbao_bg"
+         android:orientation="vertical" 
+      >
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="20dp"
+             android:gravity="center"
+             android:orientation="horizontal" 
+          >
+
+             <TextView
+                 style="@style/hongbao_shake_info1"
+                 android:text="@string/hongbao_shake_text1" 
+             />
+
+             <ImageView
+                 style="@style/img_base"
+                 android:src="@mipmap/icon_shake"
+             />
+
+             <TextView
+                 style="@style/hongbao_shake_info1"
+                 android:text="@string/hongbao_shake_text2" 
+              />
+         </LinearLayout>
+
+         <RelativeLayout
+             android:id="@+id/hongbao_shake_area"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true" 
+         >
+
+             <ImageView
+                 android:id="@+id/hongbao_shake_iv_bg"
+                 style="@style/img_base"
+                 android:layout_centerInParent="true"
+                 android:src="@mipmap/hongbao_bg"
+             />
+             
+            <ImageView 
+                android:id="@+id/hongbao_shake_iv_drop" 
+                style="@style/img_base"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/hongbao_drop"
+                android:visibility="gone" 
+             />
+
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                 android:orientation="vertical" 
+                 android:gravity="center"
+             >
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="40dp"
+                     android:text="@string/remain"
+                     android:textColor="#cd2936"
+                     android:textSize="18sp" 
+                 />
+
+                 <TextView
+                     android:id="@+id/hongbao_shake_tv_num"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     android:textColor="#cd2936"
+                     android:textSize="30sp"
+                     android:textStyle="bold" 
+                     android:text="@string/zero_int"
+                  />
+            </LinearLayout>
+       </RelativeLayout>
+        
+        <!-- 底部 -->
+	    <FrameLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	     >
+	     
+	         <LinearLayout 
+	            android:id="@+id/hongbao_shake_ll_progress"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:gravity="center"
+	            android:visibility="gone"
+	         >
+                  <ProgressBar 
+                      android:layout_width="40.0dip" 
+                      android:layout_height="40.0dip" 
+                      android:layout_margin="10.0dip"
+	              />
+                  
+	             <TextView 
+	                 style="@style/txt_white" 
+	                 android:text="@string/hongbao_shake_loading" 
+	              />
+	             
+	        </LinearLayout>
+	        
+	        <include android:id="@+id/hongbao_shake_ll_result" layout="@layout/layout_shake_result" android:visibility="gone" />
+	
+	     
+	    </FrameLayout>  
+         
+         
+     </RelativeLayout>
+
+</LinearLayout>

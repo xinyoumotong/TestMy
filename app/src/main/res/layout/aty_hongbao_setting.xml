@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+  >
+    
+     <include android:id="@+id/titlebar" 
+       layout="@layout/main_titlebar" 
+     />
+     
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_marginTop="20dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp" 
+         android:orientation="vertical"
+      >
+           <RadioGroup
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" 
+           >
+
+		        <RadioButton
+		            android:id="@+id/hongbao_setting_rb_on"
+		            style="@style/CustomRadioButton"
+		            android:background="@drawable/selector_licaibar_btn_bg_left"
+		            android:text="@string/turn_on" 
+		            android:checked="true"
+		        />
+		   
+		        <RadioButton
+		            android:id="@+id/hongbao_setting_rb_off"
+		            style="@style/CustomRadioButton"
+		            android:background="@drawable/selector_licaibar_btn_bg_right"
+		            android:text="@string/turn_off"
+		         />
+        
+           </RadioGroup>
+           
+            <LinearLayout 
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_marginTop="10dp"
+	          android:orientation="vertical"
+            >
+          
+	           <TextView 
+		          android:layout_width="wrap_content" 
+		          android:layout_height="wrap_content" 
+		          android:text="@string/tip_hongbao_setting_apply_percent"  
+		        />
+		        
+		        <RadioGroup 
+		           android:id="@+id/hongbao_setting_rg_percent"
+			       android:layout_width="fill_parent"
+			       android:layout_height="30dp"
+			       android:layout_marginTop="5dp"
+			       android:orientation="horizontal"
+		       >
+			       <RadioButton 
+			           android:id="@+id/hongbao_setting_rb_percent_10"
+			           style="@style/hongbao_setting_radiobutton"
+			           android:text="@string/percent_10"
+			       />
+			       <RadioButton 
+			           android:id="@+id/hongbao_setting_rb_percent_20"
+			           style="@style/hongbao_setting_radiobutton"
+			           android:text="@string/percent_20"
+			       />
+			       <RadioButton 
+			           android:id="@+id/hongbao_setting_rb_percent_30"
+			           style="@style/hongbao_setting_radiobutton"
+			           android:text="@string/percent_30"
+			       />
+		       
+		       </RadioGroup>
+           </LinearLayout>
+           
+           <!-- 协议 -->
+           <RelativeLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+          >
+         
+            <CheckBox 
+			  android:id="@+id/hongbao_setting_cb_agree"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:layout_alignParentLeft="true"
+			  android:layout_centerVertical="true"
+	          android:button="@drawable/selector_checkbox"
+	          android:text="@string/agree"
+	          android:checked="true"
+	        />
+         
+           <TextView 
+             android:id="@+id/hongbao_setting_tv_agreement"
+           	 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+             android:layout_toRightOf="@id/hongbao_setting_cb_agree"
+             android:layout_marginLeft="2dp"
+             android:layout_centerVertical="true"
+             android:text="@string/hongbao_agreement"
+             android:textColor="#0055ff"
+           /> 
+     </RelativeLayout>
+           
+       
+      <Button 
+         android:id="@+id/hongbao_setting_btn_submit"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:background="@drawable/selector_btn_submit"
+         android:textColor="@color/white"
+         android:text="@string/finish"
+      />    
+         
+     </LinearLayout>
+    
+  
+</LinearLayout>

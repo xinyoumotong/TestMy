@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/about_iv_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/about_tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:textColor="@color/gray_99"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_tv_version"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <!-- 检查版本 -->
+        <RelativeLayout
+            android:id="@+id/about_rl_updateVersion"
+            style="@style/about_me_rl"
+            >
+            <!--android:background="@drawable/selector_list_top"-->
+
+            <ImageView
+                android:id="@+id/update_iv"
+                style="@style/about_me_iv"
+                android:src="@mipmap/update_2px" />
+
+            <TextView
+                style="@style/about_me_tv"
+                android:layout_toRightOf="@+id/update_iv"
+                android:text="@string/appUpdate"
+                />
+
+            <!--<TextView-->
+            <!--style="@style/list_rl_tv_left"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/appUpdate"-->
+            <!--/>-->
+
+            <!--<ImageView-->
+            <!--style="@style/list_iv_arrow"-->
+            <!--/>-->
+        </RelativeLayout>
+
+        <!-- 华丽的分割线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <!--良薪宝介绍 -->
+        <RelativeLayout
+            android:id="@+id/about_rl_appIntroduce"
+            style="@style/about_me_rl">
+            <!--android:background="@drawable/selector_list_bottom"-->
+
+            <ImageView
+                android:id="@+id/introduce_iv"
+                style="@style/about_me_iv"
+                android:src="@mipmap/introduce_2px" />
+
+            <TextView
+                style="@style/about_me_tv"
+                android:layout_toRightOf="@+id/introduce_iv"
+                android:text="@string/appIntroduce"
+                />
+
+            <!--<TextView-->
+            <!--style="@style/list_rl_tv_left"-->
+            <!--android:drawableLeft="@mipmap/introduce_2px"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/appIntroduce"-->
+            <!---->
+            <!--/>-->
+            <!--<ImageView-->
+            <!--style="@style/list_iv_arrow"-->
+            <!--/>-->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/about_tv_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/copyright"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+
